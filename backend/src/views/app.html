@@ -1,0 +1,29 @@
+    <h1>Daftar Nama</h1>
+    <table border="1" cellpadding="0" cellspacing="0">
+        <tr>
+            <th style="padding: 2px;">No</th>
+            <th style="padding: 2px;">Nama</th>
+            <th style="padding: 2px;">Deskripsi</th>
+            <th style="padding: 2px;">Stock</th>
+        </tr>
+    
+    <% data.forEach((row) => { %>
+        <tr>
+            <td><%= row.id %></td>
+            <td><%= row.name %></td>
+            <td><%= row.description %></td>
+            <td><%= row.stock %></td>
+        </tr>
+    <% }) %>
+    </table>
+    <div>
+        <h2>Card</h2>
+        <div class="card">
+            <img src="https://picsum.photos/200" alt="preview" style="width: 100%">
+            <div class="container">
+                <h4><b>Deska Mulyana</b></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, consequatur.</p>
+            </div>
+        </div>
+    </div>
+    <button onclick="show()">click</button>
